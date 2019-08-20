@@ -11,6 +11,7 @@ CREATE TABLE Customers (
 	Name nvarchar(50) NOT NULL,
 	City nvarchar(30),
 	State char(2),
+	Sales int not null default 0,
 	Active bit not null default 1
 );
 GO
