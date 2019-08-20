@@ -18,7 +18,7 @@ CREATE TABLE Orders (
 	Id int not null primary key identity(2001, 1),
 	Date DateTime not null default getdate(),
 	Note nvarchar(255),
-	CustomerId int,
+	CustomerId int foreign key references Customers(Id),
 );
 GO
 CREATE TABLE Products (
@@ -59,7 +59,7 @@ INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('Pizza Hut','Kenbridge
 INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('eBay','Wesley','MI',1)
 INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('Starbucks','Jersey City','OH',1)
 INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('Caterpillar Inc.','La Porte','IL',1)
-INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('Nescafé','Southeast Arcadia','KY',1)
+INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('Nescafï¿½','Southeast Arcadia','KY',1)
 INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('Chase','Hanalei','IN',1)
 INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('Porsche','Kotzebue','OH',1)
 INSERT INTO CUSTOMERS (NAME, CITY, STATE, ACTIVE) VALUES ('HSBC','Baiting Hollow','PA',1)
