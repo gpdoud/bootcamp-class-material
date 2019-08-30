@@ -1,4 +1,4 @@
-# PrsDb-Specs: Specifications for PRS Database
+    # PrsDb-Specs: Specifications for PRS Database
 
 The PRS database is designed to support the functions of the Purchase Request System (PRS) for the capstone
 project.
