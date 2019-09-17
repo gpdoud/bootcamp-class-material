@@ -19,13 +19,19 @@ The `User` table provides two functions:
 | Lastname   | String  | No   | 30  | No     | No  | No  | No  | No  |       |
 | Phone      | String  | Yes  | 12  | No     | No  | No  | No  | No  |       |
 | Email      | String  | Yes  | 255 | No     | No  | No  | No  | No  |       |
-| IsReviewer | Boolean | No   | N/A | No     | No  | No  | 1   | No  |       |
-| IsAdmin    | Boolean | No   | N/A | No     | No  | No  | 1   | No  |       |
+| IsReviewer | Boolean | No   | N/A | No     | No  | No  | 0   | No  |       |
+| IsAdmin    | Boolean | No   | N/A | No     | No  | No  | 0   | No  |       |
 
 Notes:
 
 * The `Username` column must be unique for all rows though it is not the PK.
 * The `Phone` columns should be in `xxx-xxx-xxxx` format if provided
+
+### Methods: (other than generated methods)
+
+* Login(u, p) - Authenticates a user by username and password combination. This
+method reads the user table for the username and password passed in and returns
+the instance if found; otherwise returns null.
 
 ## Vendor
 
@@ -73,6 +79,8 @@ represents the vendors identifier for the product
 2. The `Name` is the column displayed to the user and is the name of the product
 given by the company.
 3. The `VendorId` points to the vendor that supplies the product.
+4. There should be a virtual `Vendor` instance in the Product to hold the FK
+instance when reading a Product
 
 ## Request
 
@@ -100,6 +108,16 @@ Notes:
 * The `UserId` is automatically set to the Id of the logged in user.
 * Neither `Status` nor `Total` may be set by the user. These are set by the application only.
 * The `Total` is auto calculated by adding up all the lines currently on the request
+* There should be a virtual `User` instance in the Request to hold the FK
+instance when reading a Request
+* There should be a virtual collection of `RequestLine` instances in the Request to
+hold the collection of lines related to this Request.
+
+### Methods: (other than generated methods)
+
+* Review(id) - Sets the status of the request for the id provided to "REVIEW"
+* Approve(id) - Sets the status of the request for the id provided to "APPROVED"
+* Reject(id) - Sets the status of the request for the id provided to "REJECTED"
 
 ## RequestLine
 
@@ -119,3 +137,5 @@ The `RequestLine` holds all the product for a particular request.
 Notes:
 
 * `Quantity` must be greater than or equal to zero (cannot be negative)
+* There should be a virtual `Product` instance in the RequestLine to hold the FK
+instance when reading a RequestLine for the Product
