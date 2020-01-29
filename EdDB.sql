@@ -179,76 +179,76 @@ INSERT class (Id,Subject,Section,InstructorId) VALUES(60353,'Education',353,70);
 go
 
 -- Classes needed for Major: General Business
-INSERT MajorClassRel (MajorId, ClassId) VALUES(1,10101); -- Gen bus | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(1,10102); -- Gen bus | Eng 102
-INSERT MajorClassRel (MajorId, ClassId) VALUES(1,10103); -- Gen bus | Eng 103
-INSERT MajorClassRel (MajorId, ClassId) VALUES(1,20201); -- Gen bus | Mat 201
-INSERT MajorClassRel (MajorId, ClassId) VALUES(1,20202); -- Gen bus | Mat 202
-INSERT MajorClassRel (MajorId, ClassId) VALUES(1,20203); -- Gen bus | Mat 203
-INSERT MajorClassRel (MajorId, ClassId) VALUES(1,30101); -- Gen bus | His 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(1,1,10101); -- Gen bus | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(2,1,10102); -- Gen bus | Eng 102
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(3,1,10103); -- Gen bus | Eng 103
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(4,1,20201); -- Gen bus | Mat 201
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(5,1,20202); -- Gen bus | Mat 202
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(6,1,20203); -- Gen bus | Mat 203
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(7,1,30101); -- Gen bus | His 101
 go
 
 -- Classes needed for Major: Accounting
-INSERT MajorClassRel (MajorId, ClassId) VALUES(2,10101); -- Acct | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(2,10102); -- Acct | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(2,10103); -- Acct | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(2,20201); -- Acct | Mat 201
-INSERT MajorClassRel (MajorId, ClassId) VALUES(2,20202); -- Acct | Mat 202
-INSERT MajorClassRel (MajorId, ClassId) VALUES(2,20203); -- Acct | Mat 203
-INSERT MajorClassRel (MajorId, ClassId) VALUES(2,30101); -- Acct | His 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(8,2,10101); -- Acct | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(9,2,10102); -- Acct | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(10,2,10103); -- Acct | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(11,2,20201); -- Acct | Mat 201
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(12,2,20202); -- Acct | Mat 202
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(13,2,20203); -- Acct | Mat 203
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(14,2,30101); -- Acct | His 101
 go
 
 -- Classes needed for Major: Finance
-INSERT MajorClassRel (MajorId, ClassId) VALUES(3,10101); -- Fin | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(3,10102); -- Fin | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(3,10103); -- Fin | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(3,20201); -- Fin | Mat 201
-INSERT MajorClassRel (MajorId, ClassId) VALUES(3,20202); -- Fin | Mat 202
-INSERT MajorClassRel (MajorId, ClassId) VALUES(3,20203); -- Fin | Mat 203
-INSERT MajorClassRel (MajorId, ClassId) VALUES(3,30101); -- Fin | His 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(15,3,10101); -- Fin | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(16,3,10102); -- Fin | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(17,3,10103); -- Fin | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(18,3,20201); -- Fin | Mat 201
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(19,3,20202); -- Fin | Mat 202
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(20,3,20203); -- Fin | MatId,  203
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(21,3,30101); -- Fin | His 101
 go
 
 -- Classes needed for Major: Finance
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,10101); -- Math | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,10102); -- Math | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,10103); -- Math | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,20201); -- Math | Mat 201
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,20202); -- Math | Mat 202
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,20203); -- Math | Mat 203
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,20204); -- Math | Mat 204
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,20401); -- Math | Mat 201
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,20402); -- Math | Mat 202
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,20403); -- Math | Mat 203
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,20404); -- Math | Mat 204
-INSERT MajorClassRel (MajorId, ClassId) VALUES(4,30101); -- Math | His 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(22,4,10101); -- Math | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(23,4,10102); -- Math | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(24,4,10103); -- Math | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(25,4,20201); -- Math | Mat 201
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(26,4,20202); -- Math | Mat 202
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(27,4,20203); -- Math | Mat Id, 203
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(28,4,20204); -- Math | Mat 204
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(29,4,20401); -- Math | Mat 201
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(30,4,20402); -- Math | Mat 202
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(31,4,20403); -- Math | Mat 203
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(32,4,20404); -- Math | Mat 204
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(33,4,30101); -- Math | His 10Id, 1
 go
 
 -- Classes needed for Major: Finance
-INSERT MajorClassRel (MajorId, ClassId) VALUES(5,10101); -- Eng | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(5,10102); -- Eng | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(5,10103); -- Eng | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(5,20201); -- Eng | Mat 201
-INSERT MajorClassRel (MajorId, ClassId) VALUES(5,20202); -- Eng | Mat 202
-INSERT MajorClassRel (MajorId, ClassId) VALUES(5,20203); -- Eng | Mat 203
-INSERT MajorClassRel (MajorId, ClassId) VALUES(5,30101); -- Eng | His 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(34,5,10101); -- Eng | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(35,5,10102); -- Eng | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(36,5,10103); -- Eng | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(37,5,20201); -- Eng | Mat 201
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(38,5,20202); -- Eng | Mat 202
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(39,5,20203); -- Eng | Mat 203
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(40,5,30101); -- Eng | His 101
 go
 
 -- Classes needed for Major: Finance
-INSERT MajorClassRel (MajorId, ClassId) VALUES(6,10101); -- Educ | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(6,10102); -- Educ | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(6,10103); -- Educ | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(6,20201); -- Educ | Mat 201
-INSERT MajorClassRel (MajorId, ClassId) VALUES(6,20202); -- Educ | Mat 202
-INSERT MajorClassRel (MajorId, ClassId) VALUES(6,20203); -- Educ | Mat 203
-INSERT MajorClassRel (MajorId, ClassId) VALUES(6,30101); -- Educ | His 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(41,6,10101); -- Educ | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(42,6,10102); -- Educ | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(43,6,10103); -- Educ | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(44,6,20201); -- Educ | Mat 201
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(45,6,20202); -- Educ | Mat 202
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(46,6,20203); -- Educ | Mat 203
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(47,6,30101); -- Educ | His 101
 go
 
 -- Classes needed for Major: Finance
-INSERT MajorClassRel (MajorId, ClassId) VALUES(7,10101); -- GS | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(7,10102); -- GS | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(7,10103); -- GS | Eng 101
-INSERT MajorClassRel (MajorId, ClassId) VALUES(7,20201); -- GS | Mat 201
-INSERT MajorClassRel (MajorId, ClassId) VALUES(7,20202); -- GS | Mat 202
-INSERT MajorClassRel (MajorId, ClassId) VALUES(7,20203); -- GS | Mat 203
-INSERT MajorClassRel (MajorId, ClassId) VALUES(7,30101); -- GS | His 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(48,7,10101); -- GS | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(49,7,10102); -- GS | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(50,7,10103); -- GS | Eng 101
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(51,7,20201); -- GS | Mat 201
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(52,7,20202); -- GS | Mat 202
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(53,7,20203); -- GS | Mat 203
+INSERT MajorClassRel (Id, MajorId, ClassId) VALUES(54,7,30101); -- GS | His 101
 go
