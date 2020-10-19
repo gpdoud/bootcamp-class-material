@@ -115,9 +115,9 @@ hold the collection of lines related to this Request.
 
 ### Methods: (other than generated methods)
 
-* Review(requestId) - Sets the status of the request for the id provided to "REVIEW"
-* Approve(requestId) - Sets the status of the request for the id provided to "APPROVED"
-* Reject(requestId) - Sets the status of the request for the id provided to "REJECTED"
+* Review(request) - Sets the status of the request for the id provided to "REVIEW"
+* Approve(request) - Sets the status of the request for the id provided to "APPROVED"
+* Reject(request) - Sets the status of the request for the id provided to "REJECTED"
 * GetReviews(userId) - Gets requests in review status and now owned by userId
 
 ## RequestLine
