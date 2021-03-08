@@ -1,4 +1,4 @@
-    # PrsDb-Specs: Specifications for PRS Database
+# PrsDb-Specs: Specifications for PRS Database
 
 The PRS database is designed to support the functions of the Purchase Request System (PRS) for the capstone
 project.
@@ -19,13 +19,12 @@ The `User` table provides two functions:
 | Lastname   | String  | No   | 30  | No     | No  | No  | No  | No  |       |
 | Phone      | String  | Yes  | 12  | No     | No  | No  | No  | No  |       |
 | Email      | String  | Yes  | 255 | No     | No  | No  | No  | No  |       |
-| IsReviewer | Boolean | No   | N/A | No     | No  | No  | 0   | No  |       |
-| IsAdmin    | Boolean | No   | N/A | No     | No  | No  | 0   | No  |       |
+| IsReviewer | Boolean | No   | N/A | No     | No  | No  | No  | No  |       |
+| IsAdmin    | Boolean | No   | N/A | No     | No  | No  | No  | No  |       |
 
 Notes:
 
 * The `Username` column must be unique for all rows though it is not the PK.
-* The `Phone` columns should be in `xxx-xxx-xxxx` format if provided
 
 ### Methods: (other than generated methods)
 
